@@ -10,4 +10,5 @@
     <color name="lightWhite">#FDFDFD</color>
     <color name="grayishWhite">#FCFCFC</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="graySearch">#969696</color> // цвет для строки поиска
 </resources>
