@@ -1,10 +1,15 @@
 package com.example.olympicproject
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.olympicproject.databinding.ActivityMainBinding
+import com.example.olympicproject.ui.home.Cars
+import com.example.olympicproject.ui.home.CarsAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -13,16 +18,19 @@ class MainActivity : AppCompatActivity() {
     private var _binding:ActivityMainBinding? = null
     private val mBinding get() = _binding!!
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(R.layout.fragment_splash)
-
         setContentView(mBinding.root)
         bottom_nav_menu.setupWithNavController(
             navController = nav_host_fragment.findNavController()
         )
+
+
     }
+
 
     override fun onDestroy() {
         super.onDestroy()
