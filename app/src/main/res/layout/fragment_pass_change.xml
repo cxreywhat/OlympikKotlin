@@ -1,0 +1,114 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context="passchange.PassChangeFragment"
+    tools:ignore="ExtraText">
+
+    <view
+        android:id="@+id/view8"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="452dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="-21dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="278dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="750dp"
+        android:gravity="center|left"
+        android:text="Почта и телефон"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPhone3"
+        android:layout_width="346dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="664dp"
+        android:autoText="false"
+        android:background="@drawable/krugugol_i_color"
+        android:ems="10"
+        android:hint="   Телефон"
+        android:inputType="phone"
+        android:textColor="@color/material_dynamic_neutral80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="346dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="596dp"
+        android:background="@drawable/krugugol_i_color"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="   Почта"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/grayishWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="420dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="58dp"
+        android:text="Редактировать"
+        android:textColor="@color/material_dynamic_primary50"
+        android:textSize="16sp"
+        app:backgroundTint="@color/material_dynamic_neutral90"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <view
+        android:id="@+id/view4"
+        class="androidx.appcompat.widget.AppCompatSeekBar"
+        android:layout_width="454dp"
+        android:layout_height="2dp"
+        android:layout_marginBottom="817dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-21dp" />
+
+    <view
+        android:id="@+id/view7"
+        class="androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView"
+        android:layout_width="452dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="61dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
+        tools:layout_editor_absoluteX="-18dp" />
+
+    <view
+        android:id="@+id/view10"
+        class="androidx.appcompat.widget.AppCompatSeekBar"
+        android:layout_width="452dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="475dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-34dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
